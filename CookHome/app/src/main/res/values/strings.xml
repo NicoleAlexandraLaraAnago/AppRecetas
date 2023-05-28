@@ -1,0 +1,13 @@
+<resources>
+            <string name="app_name">CookHome</string>
+            <string name="cocina">Cocina</string>
+            <string name="sign_up"><b>Sign Up</b></string>
+            <string name="hi">Hi there!Nice to see you again</string>
+            <string name="mail">email</string>
+            <string name="email_hint">Enter email</string>
+            <color name="text_color">#000000</color>
+            <string name="Enter_password">Enter password</string>
+            <string name="ingresar">Sign Up</string>
+
+
+</resources>
