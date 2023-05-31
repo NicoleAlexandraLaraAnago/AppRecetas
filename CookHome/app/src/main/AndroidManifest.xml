@@ -13,13 +13,18 @@
         android:theme="@style/Theme.CookHome"
         tools:targetApi="31">
         <activity
-            android:name=".Pantalla1"
+            android:name=".pantallaperfil"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
-            android:screenOrientation="fullSensor"
-            android:exported="true">
-
+            android:name=".Pantallarecetas"
+            android:exported="false" />
+        <activity
+            android:name=".pantallahome"
+            android:exported="false" />
+        <activity
+            android:name=".PantallaIngreso"
+            android:exported="true"
+            android:screenOrientation="fullSensor">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

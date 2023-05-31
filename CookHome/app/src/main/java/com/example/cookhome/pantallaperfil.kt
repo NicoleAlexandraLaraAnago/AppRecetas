@@ -3,9 +3,9 @@ package com.example.cookhome
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class Pantalla1 : AppCompatActivity() {
+class pantallaperfil : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_pantalla1)
+        setContentView(R.layout.pantallaperfil)
     }
 }
