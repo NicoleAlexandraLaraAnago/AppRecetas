@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecipeDetailsActivity">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="115dp"
+        android:layout_height="40dp"
+        android:padding="8dp"
+        android:text="Recetas"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/searchViewRecipe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SearchView
+        android:id="@+id/searchViewRecipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:iconifiedByDefault="false"
+        android:queryHint="Buscar recetas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:columnCount="2"
+        app:layout_constraintTop_toBottomOf="@+id/searchViewRecipe"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:id="@+id/recipe1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_columnWeight="1"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/imageViewRecipe1"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/carne_asada" />
+
+            <TextView
+                android:id="@+id/textViewRecipeName1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Carne Asada"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/recipe2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_columnWeight="1"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/imageViewRecipe2"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/chaulafan" />
+
+            <TextView
+                android:id="@+id/textViewRecipeName2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chaulafan"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/recipe3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_columnWeight="1"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/imageViewRecipe3"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/sopa_pollo" />
+
+            <TextView
+                android:id="@+id/textViewRecipeName3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sopa de Pollo"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/recipe4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_columnWeight="1"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/imageViewRecipe4"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/arroz_relleno" />
+
+            <TextView
+                android:id="@+id/textViewRecipeName4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Arroz Relleno"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/recipe5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_columnWeight="1"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/imageViewRecipe5"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pollo_salteado" />
+
+            <TextView
+                android:id="@+id/textViewRecipeName5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pollo Salteado"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/recipe6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_columnWeight="1"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/imageViewRecipe6"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/chugchucara" />
+
+            <TextView
+                android:id="@+id/textViewRecipeName6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chugchucara"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/recipe7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_columnWeight="1"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/imageViewRecipe7"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/hornado" />
+
+            <TextView
+                android:id="@+id/textViewRecipeName7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hornado"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/recipe8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_columnWeight="1"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/imageViewRecipe8"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/papas_cuero" />
+
+            <TextView
+                android:id="@+id/textViewRecipeName8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Papas con cuero"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </GridLayout>
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="42dp"
+        android:layout_height="56dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.895"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/default_profile_image" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

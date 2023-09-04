@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MyAppRecetas</string>
+    <string name="perfil">perfil</string>
+    <string name="sign_up">Welcome</string>
+    <string name="text">usuario:</string>
+    <string name="text1">recetas:</string>
+    <string name="hi">Hi there!Nice to see you again</string>
+</resources>
